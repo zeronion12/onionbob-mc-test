@@ -2,7 +2,7 @@ var mineflayer = require('mineflayer');
 var pass = "12345"; //Authme plugini şifresi (Plugin yoksa silmeyin)
 var ayar = {
   host: "ult12.falix.gg", //Sunucunuzun ipsi
-  port: process.env.ip || 48481, //Değiştirme!!!
+  port: process.env.port || 48481, //Değiştirme!!!
   username: "ONIONBOT2", //Botun ismi Kafanıza Göre
   version: "1.18.1" //Değiştirme!!!
   
