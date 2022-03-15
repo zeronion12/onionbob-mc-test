@@ -1,5 +1,5 @@
 // Now make both Main chat function and events chat function the same
-// Now test 
+// Now test with maximum 1 hour idle for heroku to reduce usage
 var mineflayer = require('mineflayer');
 var pass = "12345"; // "Authme" plugin password (No plugin No delete)
 
@@ -38,7 +38,7 @@ function bindEvents(bot) {
   // Exception function: if End => Relogin
   bot.on('end', function() {
     console.log("End!");
-    setTimeout(relog, 5000);
+    setTimeout(relog, 60000);
   });
   
   // Relogin function: do the same like Main Program
