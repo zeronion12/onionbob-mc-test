@@ -15,7 +15,7 @@ var ayar = {
 var bot = mineflayer.createBot(ayar);
 bindEvents(bot);
 // ------------------ //
-
+/*
 // Events to bind
 function bindEvents(bot) {
   
@@ -48,6 +48,6 @@ function bindEvents(bot) {
     bindEvents(bot);
   }
 }
-
+*/
   
   
