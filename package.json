@@ -7,7 +7,7 @@
   "description": "A simple Node app built on Express, instantly up and running.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "forever node server.js"
   },
   "dependencies": {
     "mineflayer": "^4.1.0",

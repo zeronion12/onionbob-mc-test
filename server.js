@@ -13,7 +13,7 @@ var ayar = {
 
 // ---Main Program--- //
 var bot = mineflayer.createBot(ayar);
-//bindEvents(bot);
+bindEvents(bot);
 // ------------------ //
 /*
 // Events to bind
