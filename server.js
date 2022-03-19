@@ -8,7 +8,7 @@ var pass = "12345"; // "Authme" plugin password (No plugin No delete)
 // Configurations, Could all be "process.env.XXX" and set in Heroku
 var ayar = {
   host: "ult12.falix.gg", // Server IP
-  port: process.env.port || 39132, // Need change to target port
+  port: process.env.port || 48481, // Need change to target port
   username: "ONIONBOT", // Bot Name in Minecraft
   version: "1.18.1" // Need change to target version
 };
