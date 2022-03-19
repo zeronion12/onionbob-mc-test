@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
     console.log(bot);
 });
 
-app.listen(ayar.port, function () {
+app.listen(3000, function () {
     /*
     setInterval(function setIntervalCallback(){
         //do something every 10 sec
