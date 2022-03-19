@@ -1,18 +1,37 @@
 // Now make both Main chat function and events chat function the same
 // Now test with maximum 1 hour idle for heroku to reduce usage
+var express = require('express');
+var app = express();
 var mineflayer = require('mineflayer');
 var pass = "12345"; // "Authme" plugin password (No plugin No delete)
 
 // Configurations, Could all be "process.env.XXX" and set in Heroku
 var ayar = {
   host: "ult12.falix.gg", // Server IP
-  port: process.env.port || 48481, // Need change to target port
-  username: "ONIONBOT2", // Bot Name in Minecraft
+  port: process.env.port || 39132, // Need change to target port
+  username: "ONIONBOT", // Bot Name in Minecraft
   version: "1.18.1" // Need change to target version
 };
 
+app.get('/', function (req, res) {
+    res.send('Hello World!');
+    console.log("hi");
+    var bot = mineflayer.createBot(ayar);
+    console.log(bot);
+});
+
+app.listen(ayar.port, function () {
+    /*
+    setInterval(function setIntervalCallback(){
+        //do something every 10 sec
+        console.log("hi");
+    }, 10000);
+    */
+});
+
+
 // ---Main Program--- //
-var bot = mineflayer.createBot(ayar);
+//var bot = mineflayer.createBot(ayar);
 //bindEvents(bot);
 // ------------------ //
 /*
